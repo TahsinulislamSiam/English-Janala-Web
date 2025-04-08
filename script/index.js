@@ -47,6 +47,13 @@ function loadLessons(){
 }
 
 
+function loadLessons(){
+  fetch("https://openapi.programming-hero.com/api/level/5")
+  .then((res)=> res.json())
+  .then((data)=>displayLessons(data.data));
+}
+
+
 // id: 101
 // lessonName: "Basic Vocabulary"
 // level_no: 1
@@ -63,8 +70,17 @@ function displayloadLessons(lessons){
     }
 }
 
+const displayLessons=(lessons)=>{
+   const lessoncontainer=document.getElementById("lesson-container");
+   lessons.forEach(lesson=>{
+    // console.log(lesson)
+    
+   })
+};
 
 
 
 
+
+loadLessons();
 loadLessons();
