@@ -1,4 +1,44 @@
 
+document.addEventListener("DOMContentLoaded",function(){
+  const nameInput=document.getElementById("nameInput");
+  const passwordInput=document.getElementById("passwordInput");
+  const getStartedBtn=document.getElementById("getStartedBtn");
+  const vocabSection=document.getElementById("vocabSection");
+
+getStartedBtn.addEventListener("click",function(){
+
+  if(!nameInput||!passwordInput){
+    console.error("Input elements not found");
+    return;
+  }
+
+  const name=nameInput.value.trim();
+  const password=passwordInput.value.trim();
+
+if(name!==""&&password!==""){
+  vocabSection.scrollIntoView({behavior:"smooth"});
+}
+else{
+  alert("Name and password can't be empty");
+}
+
+});
+
+});
+
+
+document.addEventListener("DOMContentLoaded",function(){
+  const faqques= document.getElementById("faqQues");
+  const faqsection=document.querySelector("#asked-ques");
+
+  faqques.addEventListener("click",function(){
+    faqsection.scrollIntoView({behavior:"smooth"});
+  });
+});
+
+
+
+
 function loadLessons(){
  //fetch the data
  fetch("https://openapi.programming-hero.com/api/levels/all")

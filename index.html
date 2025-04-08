@@ -33,7 +33,7 @@
                   </ul>
                 </div>
                 <div class="navbar-end gap-2">
-                  <a class="btn bg-blue-500 text-white hover:bg-blue-700">FAQ</a>
+                  <a id="faqQues" class="btn bg-blue-500 text-white hover:bg-blue-700">FAQ</a>
                   <a class="btn  bg-blue-500 text-white hover:bg-blue-700">Learn</a>
                   <a class="btn  bg-blue-500 text-white hover:bg-blue-700">Logout</a>
                 </div>
@@ -51,12 +51,12 @@
                     আজ থেকে আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ।
                 </p>
                 <div class="mt-6">
-                    <input type="text" placeholder="Enter Your Name" class="border rounded-md px-3 py-2 w-full md:w-2/3 mb-3">
-                    <input type="password" placeholder="********" class="border rounded-md px-3 py-2 w-full md:w-2/3 mb-3">
-                    <button class=" flex bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Get Started</button>
+                    <input id="nameInput" type="text" placeholder="Enter Your Name" class="border rounded-md px-3 py-2 w-full md:w-2/3 mb-3">
+                    <input id="passwordInput" type="password" placeholder="********" class="border rounded-md px-3 py-2 w-full md:w-2/3 mb-3">
+                    <button id="getStartedBtn" class=" flex bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Get Started</button>
                 </div>
             </div>
-            <div class="md:w-1/2 flex justify-center mt-6 md:mt-0">
+            <div class="md:w-1/2 flex justify-center mt-6 md:mt-0 ">
                 <div class="relative">
                     <img src="./assets/hero-student.png" alt="Smiling Person">
                         
@@ -68,7 +68,7 @@
     </main>
 
     <section >
-      <h1 class="font-semibold text-4xl text-center"><span class="text-blue-700">Let's</span> learn vocabulary</h1>
+      <h1 id="vocabSection" class="font-semibold text-4xl text-center"><span class="text-blue-700">Let's</span> learn vocabulary</h1>
       <div id="lesson-container" class="gap-2 flex justify-center py-5">
       <!-- <button class="btn btn-outline btn-primary justify-center">Lesson-1</button>
       <button class="btn btn-outline btn-primary justify-center">Lesson-1</button> -->
@@ -86,10 +86,10 @@
     </section>
 
     <section class="py-20">
-      <h1 class="font-semibold text-4xl text-center"><span class="text-blue-600">Frequently</span> Asked Questions</h1>
+      <h1 class="font-semibold text-4xl text-center mt-20"><span class="text-blue-600">Frequently</span> Asked Questions</h1>
     </section>
 
-    <section class="m-8 ">
+    <section id="asked-ques"  class="m-8 ">
       <div class="collapse collapse-plus bg-base-100 border border-base-300 bg-gray-200 mb-2">
         <input type="radio" name="my-accordion-3" />
         <div class="collapse-title font-semibold">What is difference between var,let and const?</div>
